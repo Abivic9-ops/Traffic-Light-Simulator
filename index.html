@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light Simulator | Abivic9-Ops</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- The main part of the page -->
+
+    <section class="main-container">
+        <!-- The container with the boxes to be displayed -->
+        <div class="grid-container">
+
+            <div class="box-1" style="grid-area: box-1">
+                <div class="head">
+                    <h1>Traffic Light Simulator</h1>
+                    <p>Welcome to the Traffic Light Simulator! This application allows you to simulate the behavior of
+                        traffic
+                        lights at
+                        an intersection. You can control the traffic lights and observe how they change over time.</p>
+                </div>
+            </div>
+
+            <div class="box-2" style="grid-area: box-2">
+                <div class="box-text">
+                    <h2>Its Features</h2>
+                    <ul>
+                        <li>Simulate traffic light cycles (red, yellow, green)</li>
+                        <li>Control the duration of each light</li>
+                        <li>Visual representation of the traffic lights</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-3" style="grid-area: box-3">
+                <div class="box-text">
+                    <h2>How to Use</h2>
+                    <p>Click the "Start Simulation" button below to start.For each light you can adjust the duration
+                        using the provided controls. The traffic lights will change according to the set durations.</p>
+
+                    <button class="start-simulation">Start Simulation <i class='bx bx-right-arrow-circle'></i></button>
+                </div>
+            </div>
+
+            <div class="box-4" style="grid-area: box-4">
+                <div class="traffic-light-box">
+                    <div class="light red "></div>
+                    <div class="light yellow "></div>
+                    <div class="light green"></div>
+                </div>
+
+                <div class="controls">
+                    <button onclick="toggleAuto()">Auto/Manual</button>
+                    <button onclick="changeLight()">Change Light</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="script.js"></script>
+</body>
+
+</html>
